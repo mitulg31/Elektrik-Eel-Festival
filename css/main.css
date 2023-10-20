@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+  }
+
+.header{
+    background-image: url("/image/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 932px;
+    padding-top: 46px;
+}
+
+.top-menu{
+    margin-top: 0;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    background-image: url("/image/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    margin-top: 6px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.title{
+    width: 255px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 120px;
+    cursor: pointer;
+    font-family: "Bruno Ace SC";
+}
+
+.menu-button{
+    color: #3ec8a9;
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+h4{
+    color: #3ec8a9;
+    margin-top: 5px;
+}
+
+i{
+    margin-top: 3px;
+}
+
+.promo-animation{
+    font-family: "Bruno Ace SC";
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.text-1{
+    -webkit-text-stroke: .4px #3ec8a9;
+    white-space: nowrap;
+    animation: moveText 12s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.tag-line{
+    font-family: "Bruno Ace SC";
+    -webkit-text-stroke: 1px #3ec8a9;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 65px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: #3ec8a9;
+    font-family: "Bruno Ace SC";
+    border: 2px solid #3ec8a9;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.button-container-2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button-2 {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #3ec8a9;
+    font-family: "Bruno Ace SC";
+    border: 2px solid #3ec8a9;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
