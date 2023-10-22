@@ -83,7 +83,7 @@ i{
 .text-1{
     -webkit-text-stroke: .4px #3ec8a9;
     white-space: nowrap;
-    animation: moveText 12s linear infinite;
+    animation: moveText 15s linear infinite;
 }
 
 @keyframes moveText {
@@ -189,13 +189,13 @@ i{
     margin: 10px;
 }
 
+.artist-box:hover {
+    background-color: rgba(244,244,244,0.2);
+}
+
 .artist-details {
     font-family: "Bruno Ace SC";
     color: #3ec8a9;
-}
-
-.artist-box:hover {
-    background-color: rgba(244,244,244,0.2);
 }
 
 .tickets{
@@ -240,12 +240,6 @@ i{
     background-color: rgba(244, 244, 244, 0.2);
 }
 
-.ticket-button-1 img {
-    margin-top: 60px;
-    width: 160px;
-    height: 90px;
-}
-
 .ticket-button-2 {
     width: 185px;
     height: 300px;
@@ -265,25 +259,21 @@ i{
     background-color: rgba(244, 244, 244, 0.2);
 }
 
-.ticket-button-2 img {
-    margin-top: 80px;
-    width: 160px;
-    height: 90px;
-}
-
 .ticket-info {
     font-family: "Bruno Ace SC";
+    width: 100%;
     color: #3ec8a9;
     margin-top: auto;
     margin-bottom: 5px;
     border-top: 2px solid #3ec8a9;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
-.offer{
+.limited-availability{
     font-family: "Bruno Ace SC";
     color: #3ec8a9;
     margin-top: 5px;
+    border-bottom: 1px solid #3ec8a9;
 }
 
 .title-4{
@@ -311,11 +301,15 @@ i{
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.genre img {
-    width: 60px;
-    height: 80px;
+.genre:hover {
+    background-color: rgba(244, 244, 244, 0.2);
+}
+.genre-icon{
+    color: #3ec8a9;
     margin-top: 20px;
 }
 
@@ -326,8 +320,14 @@ i{
     font-family: "Bruno Ace SC";
     color: #3ec8a9;
     padding: 5px;
-    margin-top: 40px;
+    margin-top: 45px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.genre-name:hover {
+    background-color: rgba(244, 244, 244, 0.2);
 }
 
 .arrow {
