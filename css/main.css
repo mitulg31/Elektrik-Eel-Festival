@@ -96,7 +96,7 @@ body {
     -webkit-text-stroke: 1px #3ec8a9;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 .button-container {
@@ -122,7 +122,7 @@ body {
 }
 
 .button:hover {
-    background-color: rgba(150,150,150,0.4);
+    background-color: rgba(110, 110, 110, 0.5);
 }
 
 .button-container-2 {
@@ -148,7 +148,7 @@ body {
 }
 
 .button-2:hover {
-    background-color: rgba(244, 244, 244, 0.2);
+    background-color: rgba(110, 110, 110, 0.5);
 }
 
 .artists{
@@ -189,7 +189,7 @@ body {
 }
 
 .artist-box:hover {
-    background-color: rgba(244,244,244,0.2);
+    background-color: rgba(110,110,110,0.5);
 }
 
 .artist-details {
@@ -236,7 +236,7 @@ body {
 }
 
 .ticket-button-1:hover {
-    background-color: rgba(244, 244, 244, 0.2);
+    background-color: rgba(110, 110, 110, 0.5);
 }
 
 .ticket-button-2 {
@@ -255,7 +255,7 @@ body {
 }
 
 .ticket-button-2:hover {
-    background-color: rgba(244, 244, 244, 0.2);
+    background-color: rgba(110, 110, 110, 0.5);
 }
 
 .ticket-info {
@@ -305,7 +305,7 @@ body {
 }
 
 .genre:hover {
-    background-color: rgba(244, 244, 244, 0.2);
+    background-color: rgba(110, 110, 110, 0.5);
 }
 .genre-icon{
     color: #3ec8a9;
@@ -326,7 +326,7 @@ body {
 }
 
 .genre-name:hover {
-    background-color: rgba(244, 244, 244, 0.2);
+    background-color: rgba(110, 110, 110, 0.5);
 }
 
 .arrow {
@@ -370,7 +370,7 @@ body {
 }
 
 .show-box:hover {
-    background-color: rgba(244,244,244,0.2);
+    background-color: rgba(110, 110, 110, 0.5);
 }
 
 .show-details {
@@ -381,7 +381,7 @@ body {
 
 .footer {
     background-image: url("/image/footer.png");
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -462,14 +462,14 @@ body {
 }
 
 .contact-us-button:hover {
-    background-color: rgba(244, 244, 244, 0.2);
+    background-color: rgba(110, 110, 110, 0.5);
 }
 
 .footer-links {
     text-align: center;
     font-family: 'Bruno Ace SC';
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .no-underline {
