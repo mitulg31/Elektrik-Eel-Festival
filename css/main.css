@@ -9,7 +9,7 @@ body {
 }
 
 .header{
-    background-image: url("/image/header.png");
+    background-image: url("/image/header-background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,7 +37,7 @@ body {
 }
 
 .header-logo-icon {
-    background-image: url("/image/logo.png");
+    background-image: url("/image/logo-icon.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -420,7 +420,7 @@ body {
     top: 110px;
 }
 .footer-logo-icon{
-    background-image: url("/image/logo.png");
+    background-image: url("/image/logo-icon.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
