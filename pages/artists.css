@@ -50,6 +50,10 @@ body {
     font-size: 14px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .header-logo{
     margin-top: 15px;
     width: 300px;
@@ -84,6 +88,24 @@ body {
 
 .header-logo-title:hover {
     color: rgb(32, 145, 121);
+}
+
+@media only screen and (min-width: 768px) {
+    .header-logo {
+        width: 400px;
+        height: 40x;
+    }
+
+    .header-logo .header-logo-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .header-logo .header-logo-title {
+        width: 360px;
+        height: 36px; 
+        font-size: 20px;
+    }
 }
 
 
