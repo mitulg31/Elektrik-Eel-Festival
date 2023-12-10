@@ -6,20 +6,36 @@
     <title>Elektrik Eel Festival</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/js/main.js"></script>
 </head>
 <body>
 
     <div class="header">
         <div class="top-menu">
-            <div class="header-logo">       
+            <div class="header-logo" id="headerLogo">       
                 <div class="header-logo-icon">
                 </div>
                 <div class="header-logo-title">
                     <h4>ELEKTRIK EEL FESTIVAL</h4>
                 </div>
             </div>
-            <div class="menu-button">
+            <div class="menu-button" id="menuButton">
                 <i class="fa-solid fa-bars" style="font-size: 24px"></i>
+                <i class="fa-solid fa-xmark" id="closeIcon" style="font-size: 24px; display: none;"></i>
+            </div>
+            <div class="menu-content" id="menuContent">
+                <a href="/pages/artists.html">Artists</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="genres.html">Genres</a>
+                <a href="shows.html">Shows</a>
+                <a href="#" id="signupButton">Sign Up</a>
+            </div>
+            <div class="large-screen-menu-content" id="largeScreenMenuContent">
+                <a href="/pages/artists.html">Artists</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="genres.html">Genres</a>
+                <a href="shows.html">Shows</a>
+                <a href="#" id="signupButton">Sign Up</a>
             </div>
         </div>
 
@@ -35,6 +51,11 @@
             </div>
         </div>
 
+        <div class="countdown">
+            <p class="countdown-text">Event Starts In</p>
+            <h1 id="countdown-clock" class="countdown-clock"></h1>
+        </div>
+
         <div class="tag">
             <div class="tag-line" style="font-size: 35px; color: #f4f4f4; text-align: center;">3 nights of premiere</div>
             <div class="tag-line" style="font-size: 35px; color: #f4f4f4; text-align: center;">artistry and hypnotic</div>
@@ -43,13 +64,13 @@
 
         <div class="buttons">
             <div class="button-container-1">
-                <a href="#" class="button-1" style="font-size: 19px;">Learn More</a>
-                <a href="#" class="button-1" style="font-size: 19px;">Buy Tickets</a>
+                <a href="#" class="button-1">Learn More</a>
+                <a href="#" class="button-1">Buy Tickets</a>
             </div>
             <div class="button-container-2">
-                <a href="#" class="button-2" style="font-size: 15px;">Brisbane</a>
-                <a href="#" class="button-2" style="font-size: 15px;">Sydney</a>
-                <a href="#" class="button-2"style="font-size: 15px;">Melbourne</a>
+                <a href="#" class="button-2">Brisbane</a>
+                <a href="#" class="button-2">Sydney</a>
+                <a href="#" class="button-2">Melbourne</a>
             </div>
         </div>
     </div>
@@ -58,46 +79,49 @@
         <div class="title-artists" style="font-size: 40px; color: #f4f4f4; text-align: center;">
             <p>Artists</p>
         </div>
-        <div class="artist-box">
-            <img src="/image/richie-hawtin.png" alt="Richie Hawtin">
-            <div class="artist-details">
-                <h4 style="font-size: 22px; margin-top: 10px;">Richie Hawtin</h4>
-                <p style="font-size: 20px; margin-top: 5px;">(Canada)</p>
-                <p style="font-size: 16; margin-top: 20px;">Genre: Acid House</p>
+        <div class="artist-container">
+            <div class="artist-box">
+                <img src="/image/richie-hawtin.png" alt="Richie Hawtin">
+                <div class="artist-details">
+                    <h4 style="font-size: 22px; margin-top: 10px;">Richie Hawtin</h4>
+                    <p style="font-size: 20px; margin-top: 5px;">(Canada)</p>
+                    <p style="font-size: 16; margin-top: 20px;">Genre: Acid House</p>
+                </div>
+            </div>
+            <div class="artist-box">
+                <img src="/image/robert-hood.jpg">
+                <div class="artist-details">
+                    <h4 style="font-size: 22px; margin-top: 10px;">Robert Hood</h4>
+                    <p style="font-size: 20px; margin-top: 5px;">(USA)</p>
+                    <p style="font-size: 16; margin-top: 20px;">Genre: Chicago House</p>
+                </div>
+            </div>
+            <div class="artist-box">
+                <img src="/image/surgeon-3.PNG">
+                <div class="artist-details">
+                    <h4 style="font-size: 22px; margin-top: 10px;">Surgeon</h4>
+                    <p style="font-size: 20px; margin-top: 5px;">(UK)</p>
+                    <p style="font-size: 16; margin-top: 20px;">Genre: Tribal House</p>
+                </div>
+            </div>
+            <div class="artist-box">
+                <img src="/image/oscar-mulero.jpg">
+                <div class="artist-details">
+                    <h4 style="font-size: 22px; margin-top: 10px;">Oscar Mulero</h4>
+                    <p style="font-size: 20px; margin-top: 5px;">(Spain)</p>
+                    <p style="font-size: 16; margin-top: 20px;">Genre: Dark Electro</p>
+                </div>
+            </div>
+            <div class="artist-box">
+                <img src="/image/robah-whrume.jpg">
+                <div class="artist-details">
+                    <h4 style="font-size: 22px; margin-top: 10px;">Robag Wruhme</h4>
+                    <p style="font-size: 20px; margin-top: 5px;">(Germany)</p>
+                    <p style="font-size: 16; margin-top: 20px;">Genre: Industrial</p>
+                </div>
             </div>
         </div>
-        <div class="artist-box">
-            <img src="/image/robert-hood.jpg">
-            <div class="artist-details">
-                <h4 style="font-size: 22px; margin-top: 10px;">Robert Hood</h4>
-                <p style="font-size: 20px; margin-top: 5px;">(USA)</p>
-                <p style="font-size: 16; margin-top: 20px;">Genre: Chicago House</p>
-            </div>
-        </div>
-        <div class="artist-box">
-            <img src="/image/surgeon-3.PNG">
-            <div class="artist-details">
-                <h4 style="font-size: 22px; margin-top: 10px;">Surgeon</h4>
-                <p style="font-size: 20px; margin-top: 5px;">(UK)</p>
-                <p style="font-size: 16; margin-top: 20px;">Genre: Tribal House</p>
-            </div>
-        </div>
-        <div class="artist-box">
-            <img src="/image/oscar-mulero.jpg">
-            <div class="artist-details">
-                <h4 style="font-size: 22px; margin-top: 10px;">Oscar Mulero</h4>
-                <p style="font-size: 20px; margin-top: 5px;">(Spain)</p>
-                <p style="font-size: 16; margin-top: 20px;">Genre: Dark Electro</p>
-            </div>
-        </div>
-        <div class="artist-box">
-            <img src="/image/robah-whrume.jpg">
-            <div class="artist-details">
-                <h4 style="font-size: 22px; margin-top: 10px;">Robag Wruhme</h4>
-                <p style="font-size: 20px; margin-top: 5px;">(Germany)</p>
-                <p style="font-size: 16; margin-top: 20px;">Genre: Industrial</p>
-            </div>
-        </div>
+        
     </div>
 
     <div class="tickets">
@@ -130,87 +154,122 @@
             <p>Genres</p>
         </div>
         <div class="genre-container">
-            <div class="arrow">
+            <div class="arrow prev">
                 <i class="fa-solid fa-angle-left" style="font-size: 22px;"></i>
             </div>
-            <div class="genre-box">
-                <div class="genre-icon"><i class="fa-solid fa-headphones" style="font-size: 50px;"></i></div>
-                <div class="genre-name">Deep House</div>
+            <div class="genre-slider">
+                <div class="genre-box active">
+                    <div class="genre-icon"><i class="fa-solid fa-headphones" style="font-size: 50px;"></i></div>
+                    <div class="genre-name">Acid House</div>
+                </div>
+                <div class="genre-box active">
+                    <div class="genre-icon"><i class="fa-solid fa-headphones" style="font-size: 50px;"></i></div>
+                    <div class="genre-name">Chicago House</div>
+                </div>
+                <div class="genre-box">
+                    <div class="genre-icon"><i class="fa-solid fa-headphones" style="font-size: 50px;"></i></div>
+                    <div class="genre-name">Deep House</div>
+                </div>
+                <div class="genre-box">
+                    <div class="genre-icon"><i class="fa-solid fa-headphones" style="font-size: 50px;"></i></div>
+                    <div class="genre-name">Tribal House</div>
+                </div>
+                <div class="genre-box">
+                    <div class="genre-icon"><i class="fa-solid fa-headphones" style="font-size: 50px;"></i></div>
+                    <div class="genre-name">Dark Electro</div>
+                </div>
+                <div class="genre-box">
+                    <div class="genre-icon"><i class="fa-solid fa-headphones" style="font-size: 50px;"></i></div>
+                    <div class="genre-name">Electro Industrial</div>
+                </div>
             </div>
-            <div class="genre-box">
-                <div class="genre-icon"><i class="fa-solid fa-headphones" style="font-size: 50px;"></i></div>
-                <div class="genre-name">Tribal House</div>
-            </div>
-            <div class="arrow">
+            <div class="arrow next">
                 <i class="fa-solid fa-angle-right" style="font-size: 22px;"></i>
             </div>
-        </div>  
+        </div>
     </div>
 
     <div class="shows">
         <div class="title-shows" style="font-size: 40px; color: #f4f4f4; text-align: center;">
             <p>Shows</p>
         </div>
-        <div class="show-box">
-            <div class="show-details">
-                <h2 style= "text-align: center;">Brisbane</h2>
-                <p style="font-size: 16px; margin-top: 10px; text-align: center;">Dec 19th</p>
-                <p style="font-size: 18px; margin-top: 6px; text-align: center;">The Family, Fortitude Valley</p>
-                <p style="font-size: 15px; margin-top: 5px; text-align: center;">Starts 10pm</p>
+        <div class="show-container">
+            <div class="show-box">
+                <div class="show-details">
+                    <h2 style= "text-align: center;">Brisbane</h2>
+                    <p style="font-size: 16px; margin-top: 10px; text-align: center;">Dec 19th</p>
+                    <p style="font-size: 18px; margin-top: 6px; text-align: center;">The Family, Fortitude Valley</p>
+                    <p style="font-size: 15px; margin-top: 5px; text-align: center;">Starts 10pm</p>
+                </div>
             </div>
-        </div>
-        <div class="show-box">
-            <div class="show-details">
-                <h2 style= "text-align: center;">Sydney</h2>
-                <p style="font-size: 16px; margin-top: 10px; text-align: center;">Dec 20th</p>
-                <p style="font-size: 18px; margin-top: 6px; text-align: center;">S.A.S.H, CBD</p>
-                <p style="font-size: 15px; margin-top: 5px; text-align: center;">Starts 10pm</p>
+            <div class="show-box">
+                <div class="show-details">
+                    <h2 style= "text-align: center;">Sydney</h2>
+                    <p style="font-size: 16px; margin-top: 10px; text-align: center;">Dec 20th</p>
+                    <p style="font-size: 18px; margin-top: 6px; text-align: center;">S.A.S.H, CBD</p>
+                    <p style="font-size: 15px; margin-top: 5px; text-align: center;">Starts 10pm</p>
+                </div>
             </div>
-        </div>
-        <div class="show-box">
-            <div class="show-details">
-                <h2 style= "text-align: center;">Melbourne</h2>
-                <p style="font-size: 16px; margin-top: 10px; text-align: center;">Dec 21st</p>
-                <p style="font-size: 18px; margin-top: 6px; text-align: center;">New Guernica, CBD</p>
-                <p style="font-size: 15px; margin-top: 5px; text-align: center;">Starts 10pm</p>
+            <div class="show-box">
+                <div class="show-details">
+                    <h2 style= "text-align: center;">Melbourne</h2>
+                    <p style="font-size: 16px; margin-top: 10px; text-align: center;">Dec 21st</p>
+                    <p style="font-size: 18px; margin-top: 6px; text-align: center;">New Guernica, CBD</p>
+                    <p style="font-size: 15px; margin-top: 5px; text-align: center;">Starts 10pm</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="footer">
-        <img src="/image/footer-background.png" alt="footer image">
+    <div class="user-signup">
+        <h2>Never Miss a Beat</h2>
+        <p style="font-size: 15px;">Subscribe for Exclusive Event Updates & Special Offers!</p>
+        <form action="#" method="post" class="signup-form">
+        <input type="email" name="email" placeholder="Enter your email" style="font-size: 13px; color: #f4f4f4;">
+        <span class="error-message" id="error-message"></span>
+        <button type="submit">Subscribe</button>
+        </form>
+    </div>
 
+    <footer class="footer">
+        <img src="/image/footer-background.png" alt="Footer Background">
         <div class="footer-details">
-            <div class="social-media">
-                <a href="#"><i class="fa-brands fa-facebook" style="font-size: 30px;"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram" style="font-size: 30px;"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter" style="font-size: 30px;"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube" style="font-size: 30px;"></i></a>
-                <a href="#" style="font-size: 30px;"><i class="fa-brands fa-tiktok"></i></a>
+            <div class="footer-logo" id="footerLogo">
+                <div class="footer-logo-icon">
                 </div>
-            </div>
-            <div class="footer-logo">
-                <div class="footer-logo-icon"></div>
                 <div class="footer-logo-title">
                     <h2>ELEKTRIK EEL FESTIVAL</h2>
                 </div>
             </div>
-            <div class="contact-button">
-                <button class="contact-us-button">Contact Us</button>
+            <div class="footer-items">
+                <div class="social-media">
+                    <a href="#" style="font-size: 30px;"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="font-size: 30px;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="font-size: 30px;"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" style="font-size: 30px;"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" style="font-size: 30px;"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="contact-button"><button class="contact-us">Contact Us</button></div>
+                <div class="footer-link">
+                    <a href="#" class="footer-link-name">About Us</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link-name">FAQs</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link-name">Terms & Conditions</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link-name">Privacy Policy</a>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="#" class="footer-link-name">About Us</a>
-                <span class="separator">|</span>
-                <a href="#" class="footer-link-name">FAQs</a>
-                <span class="separator">|</span>
-                <a href="#" class="footer-link-name">Terms & Conditions</a>
-                <span class="separator">|</span>
-                <a href="#" class="footer-link-name">Privacy Policy</a>
-            </div>
-            <div class="copy-right-text">
-                <p style="font-size: 10px;">© 2023 Elektrik Eel Festival. All rights reserved.</p>
+            <div class="copyright">
+            &copy; 2023 Elektrik Eel Festival. All rights reserved.
             </div>
         </div>
+    </footer>
+    </div>
+
+    <div class="return-to-top"
+    id="return-to-top">
+        <i class="fas fa-solid fa-circle-arrow-up"></i>
     </div>
 </body>
 </html>
