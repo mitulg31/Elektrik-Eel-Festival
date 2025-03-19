@@ -1,0 +1,1 @@
+The goal was to design a user interface that not only appealed to the target audience but also provided them with the ultimate user experience. In this case, the target audience was EDM music fans, and the project was focused on creating a website to sell tickets for an EDM festival. The main objective was to create a user-centric website that would attract more customers.
